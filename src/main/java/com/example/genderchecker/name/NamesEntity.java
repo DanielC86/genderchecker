@@ -20,5 +20,7 @@ public class NamesEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false, name="id")
     private Long id;
+
+    @Column(name="name")
     private String name;
 }
